@@ -14,16 +14,15 @@ def normal_calculator():
     result = 0
 
     if oprator == "+":
-        result = n1 + n2
+        result = print("Addition is: ",n1 + n2)
     elif oprator == "-":
-        result = n1 - n2
+        result = print("Subtraction is: ",n1 - n2)
     elif oprator == "*":
-        result = n1 * n2
+        result = print("Multiplication is: ",n1 * n2)
     elif oprator == "/":
-        result = n1 / n2
+        result = print("Division is: ",n1 / n2)
     else:
         print("Invalid operator...")
-    print("Result is: ", result)
 
 
 def bmi_calculator():
@@ -33,7 +32,7 @@ def bmi_calculator():
     height = float(input("Enter your height in meters    : "))
 
     bmi = weight / (height ** 2)
-    category = ""
+    category = " "
 
     if bmi < 18.5:
         category = "You are: Underweight"
@@ -70,7 +69,7 @@ def discount_calculator():
     a = int(input("Enter List price     : "))
     b = int(input("Enter selling price  : "))
     dis = (a-b)/a*100
-    print("Discount is: ", dis, " % ")
+    print("Your Discount is: ", dis, " % ")
 
 
 print()
@@ -93,7 +92,7 @@ elif choice == "4":
     discount_calculator()
 elif choice:
     print("Invalid choice...")
-
+print()
 next_calculation = input("Let's do next calculation? (yes/no): ")
 if next_calculation == "no":
     exit(next_calculation)
@@ -118,7 +117,7 @@ elif choice == "4":
     discount_calculator()
 elif choice:
     print("Invalid choice...")
-
+print()
 next_calculation = input("Let's do next calculation? (yes/no): ")
 if next_calculation == "no":
     exit(next_calculation)
@@ -143,7 +142,7 @@ elif choice == "4":
     discount_calculator()
 elif choice:
     print("Invalid choice...")
-
+print()
 next_calculation = input("Let's do next calculation? (yes/no): ")
 if next_calculation == "no":
     exit(next_calculation)
@@ -168,6 +167,3 @@ elif choice == "4":
     discount_calculator()
 elif choice:
     print("Invalid choice...")
-
-
-
