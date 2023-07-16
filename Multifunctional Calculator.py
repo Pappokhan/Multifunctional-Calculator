@@ -12,15 +12,14 @@ def normal_calculator():
     n1 = float(input("Enter your 1st number: "))
     n2 = float(input("Enter your 2nd number: "))
     oprator = input("Enter an operator (+, -, *, /): ")
-    result = 0
     if oprator == "+":
-        result = print("Addition is: ", n1 + n2)
+        print("Addition is: ", n1 + n2)
     elif oprator == "-":
-        result = print("Subtraction is: ", n1 - n2)
+        print("Subtraction is: ", n1 - n2)
     elif oprator == "*":
-        result = print("Multiplication is: ", n1 * n2)
+        print("Multiplication is: ", n1 * n2)
     elif oprator == "/":
-        result = print("Division is: ", n1 / n2)
+        print("Division is: ", n1 / n2)
     else:
         print("Invalid operator...")
 
